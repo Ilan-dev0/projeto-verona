@@ -21,7 +21,7 @@ const SeManualSlide = () => {
     }, [])
 
   return (
-    <div className='mt-44 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
+    <div className='mt-20 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
         <div className='w-full m-0-auto  flex  align-center justify-center bg-zinc-900 pt-10'>
             <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px]' whileTap={{cursor: "grabbing"}}>
                 <motion.div 
@@ -47,7 +47,7 @@ const SeManualSlide = () => {
             </div>
 
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' mb-10 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
+            <button onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
     </div>
   )

@@ -13,15 +13,15 @@ const SeManualEstrutura = () => {
     <div className='w-full h-full bg-zinc-900'>
 
       <div className='h-[150px] w-full bg-red-900 p-10'>
-        <h1 className='text-center text-5xl text-white text-bold'>ESTRUTURA DA PORTA</h1>
+        <h1 className='text-center text-2xl md:text-5xl text-white text-bold'>ESTRUTURA DA PORTA</h1>
       </div>
 
       <div className='grid md:grid-cols-2 max-w-[1000px]  m-auto  p-10 text-center justify-center items-center '>
         
-      <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+      <div className='h-[569px] max-w-[427px] w-[300px] md:w-full  flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>EIXO</h1>
                 </div>
 
@@ -30,13 +30,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={eixo} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={eixo} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>GUIAS</h1>
                 </div>
 
@@ -45,13 +45,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={guia} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={guia} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>MOLA</h1>
                 </div>
 
@@ -60,13 +60,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={mola} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={mola} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>FITA LATERAL</h1>
                 </div>
 
@@ -75,13 +75,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={fita} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={fita} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>SOLEIRA</h1>
                 </div>
 
@@ -90,13 +90,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={soleira} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={soleira} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>ETIQUETA</h1>
                 </div>
 
@@ -105,13 +105,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={etiqueta} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={etiqueta} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>CAVALETE</h1>
                 </div>
 
@@ -120,13 +120,13 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={cavalete} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={cavalete} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+            <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
+                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>FECHADURA LATERAL</h1>
                 </div>
 
@@ -135,7 +135,7 @@ const SeManualEstrutura = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={fechadura} alt='Texto alt' />
+            <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={fechadura} alt='Texto alt' />
        </div>
 
       </div>
