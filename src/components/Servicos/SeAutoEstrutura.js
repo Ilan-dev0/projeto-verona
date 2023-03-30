@@ -5,10 +5,15 @@ import soleira from '../../assets/soleira.png'
 import kit from '../../assets/kit.png'
 
 const SeAutoEstrutura = () => {
+
+  function handleClick() {
+    window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
+}
+
   return (
     <div className='w-full h-full bg-zinc-900'>
 
-      <div className='h-[150px] w-full bg-red-800 p-10'>
+      <div className='h-[150px] w-full bg-red-900 p-10'>
         <h1 className='text-center text-5xl text-white text-bold'>EIXO</h1>
       </div>
 

@@ -8,6 +8,11 @@ import image3 from '../../assets/img6.png'
 const images = [image1, image2, image3, image2, image3, image1]
 
 const SeAutoSlide = () => {
+
+    function handleClick() {
+        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
+    }
+
     const carousel = useRef();
     const [width, setWidth] = useState(0)
 
@@ -39,6 +44,10 @@ const SeAutoSlide = () => {
             <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center'>
             <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>A aplicação das portas de aço automáticas de enrolar está voltada para as Indústrias, Comércios, Centros Logísticos, Hangares, Shoppings Center, e agora também para Residências, em novos projetos que a utilizam inclusive em ambientes internos, suprindo todo o segmento com uma solução simples e eficaz nos quesitos espaço, ergonomia e, principalmente, manutenção.</p>
             <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Grandes clientes fazem parte de nossa história, atestando a qualidade que a nossa empresa oferece ao mercado nacional quando o assunto é a instalação de portas de aço automáticas.s</p>
+            </div>
+
+            <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
+            <button onClick={handleClick} className=' mb-10 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
     </div>
   )

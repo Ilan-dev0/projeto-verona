@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState, React } from 'react' 
 import { motion } from 'framer-motion'
-import image1 from '../../assets/comercial1.png'
-import image2 from '../../assets/comercial2.png'
-import image3 from '../../assets/comercial3.png'
+import image1 from '../../assets/7.png'
+import image2 from '../../assets/9.png'
+import image3 from '../../assets/26.png'
+import image4 from '../../assets/51.png'
 
-const images = [image1, image2, image3, image2, image3, image1]
+const images = [image1, image2, image3, image4]
 
 const ComSlide = () => {
 
@@ -36,8 +37,8 @@ const ComSlide = () => {
             trasition={{ duration: 0.8 }}
             >
                 {images.map(image =>(
-                    <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px] p-[14px] sm:min-w-[400px] p-[14px]' key={image}>
-                        <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                    <motion.div className='min-h-[100px] min-w-[340px]  sm:min-w-[400px] p-[14px]' key={image}>
+                        <img className='w-full h-[50%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
                     </motion.div>
                 ))}
             </motion.div>

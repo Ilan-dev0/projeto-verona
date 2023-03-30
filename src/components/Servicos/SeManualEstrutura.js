@@ -12,7 +12,7 @@ const SeManualEstrutura = () => {
   return (
     <div className='w-full h-full bg-zinc-900'>
 
-      <div className='h-[150px] w-full bg-red-800 p-10'>
+      <div className='h-[150px] w-full bg-red-900 p-10'>
         <h1 className='text-center text-5xl text-white text-bold'>ESTRUTURA DA PORTA</h1>
       </div>
 

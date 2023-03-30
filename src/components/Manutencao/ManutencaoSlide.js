@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion'
 
-import image1 from '../../assets/imgAc1.png'
-import image2 from '../../assets/imgAc2.png'
-import image3 from '../../assets/imgAc3.png'
+import image1 from '../../assets/25.png'
+import image2 from '../../assets/24.png'
+import image3 from '../../assets/man1.png'
 
-const images = [image1, image2, image3, image2, image3, image1]
+const images = [image1, image2, image3]
 
 const ManutencaoSlide = () => {
 

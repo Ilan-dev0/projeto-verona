@@ -1,87 +1,55 @@
-import React from 'react'
-
-import project1 from '../../assets/20.png'
-import project2 from '../../assets/26.png'
-import project3 from '../../assets/3.png'
-import project4 from '../../assets/51.png'
+import { useEffect, useRef, useState, React } from 'react' 
+import { motion } from 'framer-motion'
+import project1 from '../../assets/18.png'
+import project2 from '../../assets/245.png'
+import project3 from '../../assets/51.png'
+import project4 from '../../assets/48.png'
 import project5 from '../../assets/9.png'
-import project6 from '../../assets/8.png'
+import project6 from '../../assets/19.png'
 
 
 
 const Projects = () => {
+
+  const images = [project1, project2, project3, project4, project5, project6]
+
+  const carousel = useRef();
+    const [width, setWidth] = useState(0)
+
+    useEffect(() =>{
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+
+    }, [])
+
   return (
-    <div className='w-screen h-max-[940px] h-full bg-red-800 '>
+    <div className='w-screen h-max-[940px] h-full bg-[#690005] '>
       <div className='flex flex-col justify-center m-auto '>
         <div className='flex flex-row text-center items-center justify-center'>
             <h1 className='py-4 px-2 text-white text-bold md:text-3xl text-2xl'>ALGUNS DOS NOSSOS PROJETOS</h1>
         </div>
 
-        <div class="flex min-h-screen items-center justify-center p-10 ">
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project1} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">???</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project2} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">Lojas Magic Feet</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project3} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">Hocca Bar</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project4} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">Lojas Artwalk</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project5} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">Authentic Feet</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-              <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={project6} alt="" />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                  <h1 class="font-dmserif text-3xl font-bold text-white">???</h1>
-                  <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+        <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center '>
+        <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Clássicas na proteção dos comerciantes, sejam para rua ou shopping, a porta de enrolar para comercio é essencial dos pequenos á grandes projetos. Para o comerciante, lojista ou até proprietário que pretende valorizar seu imóvel para locação, a porta de aço de enrolar é certeza de praticidade, pouco espaço e segurança. Para poder garantir ao cliente modelos de portas de aço automáticas e portas de aço manuais fortes, trabalhamos com chapas de grande espessura e com as melhores travas e cadeados do mercado, porque é só trabalhando com uma matéria-prima excelente que se consegue ser sinônimo de resistência.
+        </p>
+        </div>
+        <div className='flex align-center justify-center'>
+        <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px]' whileTap={{cursor: "grabbing"}}>
+            <motion.div 
+            className='flex'
+            drag="x"
+            dragConstraints={{ right:0, left: -width}}
+            initial={{ x: 100 }}
+            animate={{ x:0 }}
+            trasition={{ duration: 0.8 }}
+            >
+                {images.map(image =>(
+                    <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px] p-[14px] sm:min-w-[400px] p-[14px]' key={image}>
+                        <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                    </motion.div>
+                ))}
+            </motion.div>
+        </motion.div>
+        </div>
 
       </div>
     </div>

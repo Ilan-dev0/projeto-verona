@@ -3,7 +3,7 @@ import React from 'react'
 const ManutencaoManualBody = () => {
   return (
     <div>
-      <div className='m-0-auto w-full flex-column align-center justify-center bg-red-800'>
+      <div className='m-0-auto w-full flex-column align-center justify-center bg-red-900'>
             <div className='pt-8 flex justify-center items-center w-full h-full'>
                 <h1 className='text-white text-lg sm:text-5xl font-bold mr-2 ml-2 text-center'>
                     MANUTENÇÃO EM PORTAS MANUAIS

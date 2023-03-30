@@ -3,7 +3,7 @@ import logoimg from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <div className='w-screen h-max-[665px] h-full bg-red-800'>
+    <div className='w-screen h-max-[665px] h-full bg-[#690005]'>
       <div className='border-b-2  grid md:grid-cols-2 max-w-[1000px] m-auto p-10 text-center justify-between items-center'>
         
             <div className='py-5 text-center items-center '>

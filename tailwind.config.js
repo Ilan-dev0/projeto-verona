@@ -21,6 +21,9 @@ module.exports = {
   extend:{
     fontFamily: {
      poppins: ['Poppins'],
-    }   
+    },   
+    colors: {
+      'verona-red': '#690005',
+    }
    }
 }

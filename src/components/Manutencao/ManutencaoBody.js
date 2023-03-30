@@ -6,12 +6,12 @@ const ManutencaoBody = () => {
 
     return(
         <>        
-        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-800'>
+        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-900'>
             
             
     </div>
 
-        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-800'>
+        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-900'>
             <div className='pt-8 flex justify-center items-center w-full h-full'>
                 <h1 className='text-white text-lg sm:text-5xl font-bold mr-2 ml-2 text-center'>
                     MANUTENÇÃO EM PORTAS AUTOMÁTICAS 
@@ -55,7 +55,7 @@ const ManutencaoBody = () => {
         </div>
     
 
-        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-800'>
+        <div className='m-0-auto w-full flex-column align-center justify-center bg-red-900'>
             <div className='p-12 sm:p-20 sm:pl-48 w-full justify-center align-center m-0-auto'>
                 <p className='text-white text-justify sm:text-start font-light sm:text-lg sm:sm:text-2xl'>Se algum problema acontecer, conte com a gente independentemente do caso, o melhor caminho sempre será solicitar ajuda de um suporte profissional. </p>
                 <p className='text-white text-justify sm:text-start font-light sm:text-lg sm:sm:text-2xl mt-10'>Além de realizar o diagnóstico, os técnicos da Verona executam o trabalho utilizando o maquinário e ferramentas adequadas e seguindo todos os protocolos de segurança, sempre pensando em amenizar ao máximo seus prejuízos. </p>

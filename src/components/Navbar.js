@@ -21,21 +21,21 @@ const Navbar = () => {
                     </li>
                     <li className='hover:text-red-900 hover:bg-white group'>
                         <p className='cursor-pointer'>SERVIÇOS	</p>
-                        <ul className='group-hover:block hover:block right-160 top-[147px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
+                        <ul className='group-hover:block hover:block right-160 top-[131px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
                             <li className='border-b-2 py-5 hover:bg-white hover:text-red-900'><a href='/SeAuto'>PORTAS DE AÇO AUTOMÁTICAS</a></li>
                             <li className='hover:bg-white py-5 hover:text-red-900'><a href='/SeManual'>PORTAS DE AÇO MANUAIS</a></li>
                         </ul>
                     </li>
                     <li className='hover:text-red-900 hover:bg-white group'>
                         <p className='cursor-pointer'>ACESSÓRIOS	</p>
-                        <ul className='group-hover:block hover:block right-160 top-[147px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
+                        <ul className='group-hover:block hover:block right-160 top-[131px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
                             <li className='border-b-2 py-5 hover:bg-white hover:text-red-900'><a href='/AcAuto'>ACESSÓRIOS AUTOMÁTICOS</a></li>
                             <li className='hover:bg-white py-5 hover:text-red-900'><a href='/AcManual'>ACESSÓRIOS MANUAIS</a></li>
                         </ul>
                     </li>
                     <li className='hover:text-red-900 hover:bg-white group'>
                         <p className='cursor-pointer'>MANUTENÇÃO</p>
-                        <ul className='group-hover:block hover:block right-160 top-[147px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
+                        <ul className='group-hover:block hover:block right-160 top-[131px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
                             <li className='border-b-2 py-5 hover:bg-white hover:text-red-900'><a href='/Manutencao'>MANUTENÇÃO AUTOMÁTICA</a></li>
                             <li className='hover:bg-white py-5 hover:text-red-900'><a href='/ManutencaoManual'>MANUTENÇÃO MANUAL</a></li>
                         </ul>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     </li>
                     <li className='hover:text-red-900 hover:bg-white group'>
                         <p className='cursor-pointer'>MANUTENÇÃO</p>
-                        <ul className='group-hover:block hover:block right-160 top-[147px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
+                        <ul className='group-hover:block hover:block right-160 top-[495px] absolute hidden bg-red-900 text-white w-[400px] h-[129px]'>
                             <li className='border-b-2 py-5 hover:bg-white hover:text-red-900'><a href='/Manutencao'>MANUTENÇÃO AUTOMÁTICA</a></li>
                             <li className='hover:bg-white py-5 hover:text-red-900'><a href='/ManutencaoManual'>MANUTENÇÃO MANUAL</a></li>
                         </ul>

@@ -7,14 +7,17 @@ import imgbg from '../../assets/imgbg.png'
 
 const slides = [
   {
-    url: 'https://cdn.discordapp.com/attachments/900426265402687498/1079812947951493262/29.png'
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152225320292472/32.png'
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/900426265402687498/1079811965263826964/8.png'
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152378617905265/7.png'
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/900426265402687498/1079811965913931776/9.png'
-  }
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379188314152/11.png'
+  },
+  {
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379830063174/13.png'
+  },
 ]
 
   
@@ -48,8 +51,8 @@ const Hero = () => {
     <div className=' w-screen  relative group'>
       <div className=' h-[820px] w-full relative group'>
         <div className="bg-black bg-opacity-80 h-[820px] w-full absolute pt-80 sm:pt-80">
-          <h1 className='text-white text-3xl sm:text-7xl font-bold text-center sm:text-start sm:pl-60'>VERONA PORTAS DE AÇO</h1>
-          <p className='text-zinc-300 text-1xl pt-4 sm:text-2xl sm:pl-60 text-center sm:text-start' >“Há 30 anos, transformando aço em segurança.”</p>
+          <h1 className='text-white text-3xl sm:text-7xl font-bold text-center sm:text-start sm:pl-60'>30 ANOS TRANSFORMANDO AÇO EM SEGURANÇA</h1>
+          <p className='text-zinc-300 text-1xl pt-4 sm:text-2xl sm:pl-60 text-center sm:text-start' >FÁBRICA DE PORTAS DE AÇO DE ENROLAR AUTOMÁTICAS</p>
           <p className='text-zinc-300 text-1xl pt-4 italic sm:pl-60 text-center sm:text-start'> A Verona é referência desde 1993 porque sabe que segurança não é brincadeira. É pré-requisito de fábrica.</p>
           <p className='text-zinc-300 text-1xl italic sm:pl-60 text-center sm:text-start'>Matéria-prima mais resistente, maquinário moderno e suporte profissionalizado são alguns dos diferenciais que <br></br> encantam nossos clientes em três décadas de história.</p>
           <div className='grid justify-items-center sm:flex sm:justify-items-start'>
