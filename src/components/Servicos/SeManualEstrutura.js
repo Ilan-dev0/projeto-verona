@@ -66,7 +66,7 @@ const SeManualEstrutura = () => {
        <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
             <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2  p-2 px-20 md:px-28 max-w-sm md:max-w-[400px] '>
                     <h1 className='text-white text-2xl'>FITA LATERAL</h1>
                 </div>
 
@@ -81,7 +81,7 @@ const SeManualEstrutura = () => {
        <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
             <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2  p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>SOLEIRA</h1>
                 </div>
 
@@ -96,7 +96,7 @@ const SeManualEstrutura = () => {
        <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
             <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2  p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>ETIQUETA</h1>
                 </div>
 
@@ -111,7 +111,7 @@ const SeManualEstrutura = () => {
        <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
             <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2  p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>CAVALETE</h1>
                 </div>
 
@@ -126,7 +126,7 @@ const SeManualEstrutura = () => {
        <div className='h-[569px] max-w-[427px] w-[300px] md:w-full   flex flex-col   '>
             
             <div className='  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2  p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2  p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>FECHADURA LATERAL</h1>
                 </div>
 

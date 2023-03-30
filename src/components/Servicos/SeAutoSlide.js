@@ -22,7 +22,7 @@ const SeAutoSlide = () => {
     }, [])
 
   return (
-    <div className='mt-44 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
+    <div className='mt-20 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
         <div className='w-full m-0-auto  flex  align-center justify-center bg-zinc-900 pt-10'>
             <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px]' whileTap={{cursor: "grabbing"}}>
                 <motion.div 

@@ -19,10 +19,10 @@ const SeAutoEstrutura = () => {
 
       <div className='grid md:grid-cols-2 max-w-[1000px]  m-auto  p-10 text-center justify-center items-center '>
         
-      <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+      <div className='h-[569px] max-w-[427px] w-[300px] md:w-full  flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>CADEADO</h1>
                 </div>
 
@@ -34,10 +34,10 @@ const SeAutoEstrutura = () => {
             <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={eixo} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full  flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>GUIAS</h1>
                 </div>
 
@@ -49,10 +49,10 @@ const SeAutoEstrutura = () => {
             <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={guia} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full  flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>SOLEIRA</h1>
                 </div>
 
@@ -64,10 +64,10 @@ const SeAutoEstrutura = () => {
             <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={soleira} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
+       <div className='h-[569px] max-w-[427px] w-[300px] md:w-full  flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>KIT DE AUTOMAÇÃO</h1>
                 </div>
 

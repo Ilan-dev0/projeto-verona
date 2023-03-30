@@ -18,7 +18,7 @@ const IndSlide = () => {
 
 
   return (
-    <div className='mt-44 w-full m-0-auto flex-column  align-center justify-center bg-zinc-900'>
+    <div className='mt-20 w-full m-0-auto flex-column  align-center justify-center bg-zinc-900'>
     <div className='w-full m-0-auto w-full flex  align-center justify-center bg-zinc-900 pt-10'>
         </div>
             <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center'>

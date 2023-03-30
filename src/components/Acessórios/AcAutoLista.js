@@ -13,15 +13,15 @@ const AcAutoLista = () => {
     <div className='w-full h-full bg-zinc-900'>
 
       <div className='h-[150px] w-full bg-red-900 p-10'>
-        <h1 className='text-center text-5xl text-white text-bold'>ACESSÓRIOS</h1>
+        <h1 className='text-center text-2xl md:text-5xl text-white text-bold'>ACESSÓRIOS</h1>
       </div>
 
-      <div className='grid grid-cols-1 gap-5 md:grid-cols-2  max-w-[1000px]  m-auto  p-10 text-center  items-center '>
+      <div className=' md:space-y-0 space-y-36 grid grid-cols-1 gap-5 md:grid-cols-2  max-w-[1000px]  m-auto  p-10 text-center  items-center '>
         
       <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>CONTROLE</h1>
                 </div>
 
@@ -36,7 +36,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>NO-BREAK</h1>
                 </div>
 
@@ -51,7 +51,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>CAIXA INOX</h1>
                 </div>
 
@@ -66,7 +66,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>PORTINHOLA</h1>
                 </div>
 
@@ -81,7 +81,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>PORTINHOLA DE EMERGÊNCIA</h1>
                 </div>
 
@@ -96,7 +96,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>PINTURA ELETROESTÁTICA</h1>
                 </div>
 
@@ -111,7 +111,7 @@ const AcAutoLista = () => {
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col  mt-10 '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
-                <div className='border-b-2 border-white p-2 px-28 max-w-[400px] '>
+                <div className='border-b-2 border-white p-2 px-18 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>SISTEMA ANTI-ESMAGAMENTO</h1>
                 </div>
 
