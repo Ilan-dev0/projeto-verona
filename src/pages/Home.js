@@ -6,6 +6,7 @@ import Footer from '../components/Home/Footer'
 import Hero from '../components/Home/Hero'
 import Logo from '../components/Home/Logo'
 import Mid from '../components/Home/Mid'
+import Parallax from '../components/Home/Parallax'
 import Projects from '../components/Home/Projects'
 import Reference from '../components/Home/Reference'
 
@@ -18,9 +19,10 @@ const Home = () => {
       <Reference />
       <Mid />
       <Projects />
+      <Bottom />
       <Doubt />
       <Clients />
-      <Bottom />
+      <Parallax />
       <Footer />
     </div>
   )

@@ -15,12 +15,12 @@ const Reference = () => {
   return (
     <div className='w-screen h-max-[940px] h-full bg-[#690005]'>
       <div className='flex flex-col justify-center m-auto '>
-        <div className=' text-center items-center justify-center'>
+        <div className=' text-center items-center justify-center p-5 mt-10'>
             <h1 className='py-4 px-2 text-white text-bold md:text-3xl text-2xl'>POR QUE A VERONA É REFERÊNCIA EM SEGURANÇA?</h1>
             <h2 className='py-4  text-white text-bold '>Porque utilizamos a melhor matéria-prima do mercado.</h2>
         </div>
 
-        <div class="flex min-h-screen items-center justify-center p-10 ">
+        <div class="flex min-h-screen items-center justify-center p-10  ">
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
               <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div class="h-96 w-72">
@@ -93,7 +93,7 @@ const Reference = () => {
             </div>
             
           </div>
-            <div className='px-24 ml-64 mb-20 justify-items-center sm:flex sm:justify-items-start'>
+            <div className='md:px-24 md:ml-64 md:mb-20 mb-20 px-14 justify-items-center sm:flex sm:justify-items-start'>
             <button onClick={handleClick} className=' sm:ml-60 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-zinc-900 hover:border-red-800 hover:text-white border-white'>SOLICITAR ORÇAMENTO</button>
             </div>
       </div>
