@@ -3,7 +3,7 @@ import logoimg from '../../assets/whatsapp.png'
 
 const FixedWpp = () => {
     function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de retirar uma dúvida'
+        window.location.href = 'https://api.whatsapp.com/send?phone=5511982096911&text=Olá! Gostaria de retirar uma dúvida'
     }
 
     return (

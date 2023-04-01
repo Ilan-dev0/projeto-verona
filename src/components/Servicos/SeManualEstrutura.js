@@ -1,14 +1,21 @@
 import React from 'react'
-import eixo from '../../assets/eixom.png'
-import guia from '../../assets/guias.png'
-import soleira from '../../assets/soleira.png'
-import cavalete from '../../assets/cavalete.png'
-import etiqueta from '../../assets/etiqueta.png'
-import fechadura from '../../assets/fechadura.png'
-import fita from '../../assets/fita.png'
-import mola from '../../assets/mola.png'
+import eixo from '../../assets/eixo2.png'
+import guia from '../../assets/guia2.png'
+import soleira from '../../assets/soleira2.png'
+import cavalete from '../../assets/cavalete2.png'
+import etiqueta from '../../assets/etiqueta2.png'
+import fechadura from '../../assets/fechadura2.png'
+import fita from '../../assets/fita2.png'
+import mola from '../../assets/mola2.png'
+import tipos from '../../assets/image 41.png'
 
 const SeManualEstrutura = () => {
+
+    function handleClick() {
+        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de retirar uma dúvida'
+    }
+
+
   return (
     <div className='w-full h-full bg-zinc-900'>
 
@@ -137,7 +144,21 @@ const SeManualEstrutura = () => {
 
             <img className='w-[300px] md:w-full h-[300px] rounded-b-xl pointer-events-none' src={fechadura} alt='Texto alt' />
        </div>
+            
 
+      </div>
+      
+      <div className='flex flex-col p-10 items-center'>
+
+      <img className='w-[300px] md:w-[40%] md:h-[50%] h-[300px] rounded-b-xl pointer-events-none justify-center' src={tipos} alt='Texto alt' />
+
+            <p className='text-white p-20'>Disponibilizamos a opção de chapa inox para todos os perfis de lâminas.
+Atendemos grandes marcas, construtoras, <br></br> arquitetos e engenheiros para projetos de todos os tipos e tamanhos. <br></br> São 30 anos de história e mais de 200.000 projetos concluídos com sucesso.
+Quer garantir qualidade e segurança no seu projeto? <br></br> Entre em contato com a nossa equipe e faça uma cotação sem compromisso. Será um grande prazer atendê-lo.
+s</p>
+            <div className='flex pr-4 pt-8 justify-center items-center '>
+                <button className='px-8 py-3 ' onClick={handleClick}>ENTRE EM CONTATO AGORA</button>
+            </div>
       </div>
 
     </div>

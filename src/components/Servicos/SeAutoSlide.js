@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion'
 
-import image1 from '../../assets/img4.png'
-import image2 from '../../assets/img5.png'
-import image3 from '../../assets/img6.png'
+import image1 from '../../assets/8.png'
+import image2 from '../../assets/110.png'
+import image3 from '../../assets/48.png'
 
-const images = [image1, image2, image3, image2, image3, image1]
+const images = [image1, image2, image3]
 
 const SeAutoSlide = () => {
 

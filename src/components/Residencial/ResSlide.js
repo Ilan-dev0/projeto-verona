@@ -2,9 +2,9 @@ import { useEffect, useRef, useState, React } from 'react'
 import { motion } from 'framer-motion'
 import image1 from '../../assets/residencial1.png'
 import image2 from '../../assets/residencial2.png'
-import image3 from '../../assets/residencial3.png'
+import image3 from '../../assets/metal1.jpg'
 
-const images = [image1, image2, image3, image2, image3, image1]
+const images = [image1, image2, image3]
 
 const ResSlide = () => {
 

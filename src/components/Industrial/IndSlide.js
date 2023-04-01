@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState, React } from 'react' 
 import { motion } from 'framer-motion'
-import image1 from '../../assets/industrial1.png'
-import image2 from '../../assets/industrial2.png'
-import image3 from '../../assets/industrial3.png'
+import image1 from '../../assets/industrial1.jpg'
+import image2 from '../../assets/industrial2.jpg'
+import image3 from '../../assets/industrial3.jpg'
+import image4 from '../../assets/industrial4.png'
 
-const images = [image1, image2, image3, image2, image3, image1]
+
+const images = [image1, image2, image3, image4]
 
 const IndSlide = () => {
 
@@ -37,7 +39,7 @@ const IndSlide = () => {
                 >
                     {images.map(image =>(
                         <motion.div className='min-h-[200px] min-w-[400px] p-[14px] ' key={image}>
-                            <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                            <img className='w-full h-[50%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
                         </motion.div>
                     ))}
                 </motion.div>

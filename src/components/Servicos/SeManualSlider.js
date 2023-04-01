@@ -1,11 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion'
 
-import image1 from '../../assets/img4.png'
-import image2 from '../../assets/img5.png'
-import image3 from '../../assets/img6.png'
+import image1 from '../../assets/18.JPG'
+import image2 from '../../assets/5.png'
+import image3 from '../../assets/67.png'
+import image4 from '../../assets/metal1.jpg'
 
-const images = [image1, image2, image3, image2, image3, image1]
+const images = [image1, image2, image3, image4]
 
 function handleClick() {
     window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
@@ -23,7 +24,7 @@ const SeManualSlide = () => {
   return (
     <div className='mt-20 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
         <div className='w-full m-0-auto  flex  align-center justify-center bg-zinc-900 pt-10'>
-            <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px]' whileTap={{cursor: "grabbing"}}>
+            <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px] h-[300px]' whileTap={{cursor: "grabbing"}}>
                 <motion.div 
                 className='flex'
                 drag="x"
@@ -33,8 +34,8 @@ const SeManualSlide = () => {
                 trasition={{ duration: 0.8 }}
                 >
                     {images.map(image =>(
-                        <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px]  p-[14px] ' key={image}>
-                            <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                        <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px]   p-[14px] ' key={image}>
+                            <img className='w-full h-[50%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
                         </motion.div>
                     ))}
                 </motion.div>

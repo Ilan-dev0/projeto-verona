@@ -3,7 +3,7 @@ import controle from '../../assets/controle.png'
 import nobreak from '../../assets/nobreak.png'
 import caixa from '../../assets/caixa.png'
 import emergencia from '../../assets/emergencia.png'
-import sae from '../../assets/sae.png'
+import sae from '../../assets/sae2.png'
 import portinhola from '../../assets/portinhola.png'
 import pintura from '../../assets/pintura.png'
 
