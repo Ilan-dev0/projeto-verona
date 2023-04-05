@@ -5,7 +5,6 @@ import logoimg from '../assets/logo.png'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-    const [navbar, setNavbar] = useState(false);
     const handleClick = () => setNav(!nav)
 
   return (
@@ -15,17 +14,17 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <a href='/'><img className='h-20 sm:w-33 cursor-pointer mr-4 ' src={logoimg} alt='logo' /></a>
+              <a href='/'><img className='md:h-20 h-14 md:w-33 cursor-pointer mr-4 ' src={logoimg} alt='logo' /></a>
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className='md:hidden cursor-pointer' onClick={() => setNavbar(!navbar)}>
-                {!nav ? <MenuIcon className='w-10 text-white' /> : <XIcon className='w-10 text-white' /> }
+              <div className='md:hidden cursor-pointer' onClick={handleClick}>
+                {!nav ? <MenuIcon className='w-8 text-white' /> : <XIcon className='w-8 text-white' /> }
               </div>
             </div>
           </div>
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
+                nav ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">

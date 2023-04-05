@@ -24,7 +24,7 @@ const IndSlide = () => {
     <div className='w-full m-0-auto w-full flex  align-center justify-center bg-zinc-900 pt-10'>
         </div>
             <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center'>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Tamanho não é documento quando se trata de portas de aço em São Paulo, com nosso sistema de portas de aço de enrolar automáticas, você pode vencer grandes larguras e alturas sem colunas de divisão e ainda ter uma economia incrível de espaço, combinada com uma estética imponente. A indústria que precisa de portas de aço automáticas e portas de aço manuais, também precisa que elas garantam sua proteção e suporte grande fluxo de funcionamento, contando com um sistema de qualidade que reflita a dimensão da empresa.</p>
+            <p className='text-white text-left sm:text-start font-light text-lg tracking-wider'>Tamanho não é documento quando se trata de portas de aço em São Paulo, com nosso sistema de portas de aço de enrolar automáticas, você pode vencer grandes larguras e alturas sem colunas de divisão e ainda ter uma economia incrível de espaço, combinada com uma estética imponente. A indústria que precisa de portas de aço automáticas e portas de aço manuais, também precisa que elas garantam sua proteção e suporte grande fluxo de funcionamento, contando com um sistema de qualidade que reflita a dimensão da empresa.</p>
         </div>
         
         <div className='flex align-center justify-center'>

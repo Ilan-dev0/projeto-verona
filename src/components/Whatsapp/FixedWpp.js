@@ -7,7 +7,7 @@ const FixedWpp = () => {
     }
 
     return (
-        <div class='fixed bottom-[44px] right-[5px] h-[290px] w-[80px] flex justify-center  '>
+        <div class='fixed bottom-[44px] right-[5px] h-[290px] w-[80px] flex justify-center z-50 '>
                 <img className='fixed bottom-[32px] right-[50px] w-[60px] h-[60px] z-50 flex flex-col justify-center items-center rounded-full' src={logoimg} alt='logo' onClick={handleClick}/>
         </div>
     )

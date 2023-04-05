@@ -29,7 +29,7 @@ const Projects = () => {
         </div>
 
         <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center '>
-        <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Clássicas na proteção dos comerciantes, sejam para rua ou shopping, a porta de enrolar para comercio é essencial dos pequenos á grandes projetos. Para o comerciante, lojista ou até proprietário que pretende valorizar seu imóvel para locação, a porta de aço de enrolar é certeza de praticidade, pouco espaço e segurança. Para poder garantir ao cliente modelos de portas de aço automáticas e portas de aço manuais fortes, trabalhamos com chapas de grande espessura e com as melhores travas e cadeados do mercado, porque é só trabalhando com uma matéria-prima excelente que se consegue ser sinônimo de resistência.
+        <p className='text-white text-left sm:text-start font-light text-lg tracking-wider'>Clássicas na proteção dos comerciantes, sejam para rua ou shopping, a porta de enrolar para comercio é essencial dos pequenos á grandes projetos. Para o comerciante, lojista ou até proprietário que pretende valorizar seu imóvel para locação, a porta de aço de enrolar é certeza de praticidade, pouco espaço e segurança. Para poder garantir ao cliente modelos de portas de aço automáticas e portas de aço manuais fortes, trabalhamos com chapas de grande espessura e com as melhores travas e cadeados do mercado, porque é só trabalhando com uma matéria-prima excelente que se consegue ser sinônimo de resistência.
         </p>
         </div>
         <div className='flex align-center justify-center'>
