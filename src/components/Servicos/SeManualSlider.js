@@ -41,14 +41,14 @@ const SeManualSlide = () => {
                 </motion.div>
             </motion.div>
         </div>
-            <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center'>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Suas lâminas de aço galvanizado associadas aos demais componentes, conferem às portas de aço manuais de enrolar, resistência, durabilidade e funcionalidade. Clássicas nas fachadas comerciais, hoje as portas de aço manuais são destaque em diversos projetos de interiores, com estilos que vão do clássico ao industrial.</p>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>O custo de uma porta de aço de enrolar manual se torna muito mais acessível, sem perder a qualidade em acabamento e segurança.</p>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Simples e práticas, nossas portas de aço manuais saem da produção com a melhor matéria-prima do mercado.</p>
+            <div className='p-10 sm:pl-40 sm:pr-40 pb-10 w-full justify-center align-center m-0-auto text-center'>
+            <p className='text-white  sm:text-start font-light text-lg tracking-wider'>Suas lâminas de aço galvanizado associadas aos demais componentes, conferem às portas de aço manuais de enrolar, resistência, durabilidade e funcionalidade. Clássicas nas fachadas comerciais, hoje as portas de aço manuais são destaque em diversos projetos de interiores, com estilos que vão do clássico ao industrial.</p>
+            <p className='text-white  sm:text-start font-light text-lg tracking-wider'>O custo de uma porta de aço de enrolar manual se torna muito mais acessível, sem perder a qualidade em acabamento e segurança.</p>
+            <p className='text-white  sm:text-start font-light text-lg tracking-wider'>Simples e práticas, nossas portas de aço manuais saem da produção com a melhor matéria-prima do mercado.</p>
             </div>
 
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
+            <button onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4  text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
     </div>
   )

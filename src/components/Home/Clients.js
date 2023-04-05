@@ -16,14 +16,14 @@ const Clients = () => {
           <h1 className='text-center text-bold text-3xl'>Jailton</h1>
           <p className='text-center'>Lojas Magic Feet</p>
           <img className='w-[60px] mt-3' src={bagulho} alt=''/>
-          <p className='text-center md:text-2xl text-1xl m-3  max-w-[3000px]'>Parabéns, realmente foi ótimo o serviço prestado pra gente, resolveu com agilidade e seriedade as nossas lojas</p>
+          <p className='text-center md:text-1xl text-1xl m-3  max-w-[3000px]'>Parabéns, realmente foi ótimo o serviço prestado pra gente, resolveu com agilidade e seriedade as nossas lojas</p>
         </div>
         <div className='max-w-sm  max-h-[600px] h-full bg-white rounded-2xl py-9 m-10 flex-col flex items-center'>
           <img className='w-[200px] ' src={client2} alt=''/>
           <h1 className='text-center text-bold text-3xl'>Leila Nascimento</h1>
           <p className='text-center'>Lojas Camisaria Colombo</p>
           <img className='w-[60px] mt-3' src={bagulho} alt=''/>
-          <p className='text-center  md:text-2xl max-w-[400px] text-1xl m-3 '>Nós da Camisaria Colombo agradecemos e parabenizamos os profissionais da empresa Portas Verona pela excelência, dedicação e competência em seu atendimento.</p>
+          <p className='text-center  md:text-1xl max-w-[400px] text-1xl m-3 '>Nós da Camisaria Colombo agradecemos e parabenizamos os profissionais da empresa Portas Verona pela excelência, dedicação e competência em seu atendimento.</p>
         </div>
         
         <div className='max-w-sm  max-h-[500px] h-full bg-white rounded-2xl py-9 m-10 flex-col flex items-center'>
@@ -36,6 +36,6 @@ const Clients = () => {
       </div>
     </div>
   )
-}
+} 
 
 export default Clients

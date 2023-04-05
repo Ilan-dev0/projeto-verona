@@ -68,14 +68,7 @@ const Hero = () => {
         <div className='hidden group-hover:block absolute top-[55%] -translate-x-0 translate-y[-50%] right-5 text-2xl rounded-full p-2 bg-black text-white cursor-pointer'>
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
-        {/* Pontos */}
-        <div className='flex  justify-center absolute top-[95%] right-1 left-1'>
-          {slides.map((slide, slideIndex) => (
-            <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className='text-2xl cursor-pointer'>
-              <RxDotFilled />
-            </div>
-          ))}
-        </div>
+
       </div>
         
     </div>

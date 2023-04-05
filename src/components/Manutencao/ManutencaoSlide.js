@@ -45,9 +45,9 @@ const ManutencaoSlide = () => {
             </div>
             
             <div className='p-12 sm:p-20 sm:pl-48 w-full justify-center align-center m-0-auto'>
-                    <p className='text-white text-justify sm:text-start font-light sm:text-lg sm:text-2xl'>Somente 27 anos de experiência em portas de aço de enrolar possibilita um diagnóstico sem falhas quando se trata das necessidades de nossos clientes.</p>
-                    <p className='text-white text-justify sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Na hora de consertar a porta surgem inúmeras dúvidas, entre em contato com a nossa central e esclareça todas elas, agende uma visita e receba um orçamento sem compromisso.</p>
-                    <p className='text-white text-justify sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Mas para começar a entender melhor a vida útil de sua porta de aço e os problemas, conheça a baixo alguns casos comuns e perguntas frequentes.</p>
+                    <p className='text-white  sm:text-start font-light sm:text-lg sm:text-2xl'>Somente 27 anos de experiência em portas de aço de enrolar possibilita um diagnóstico sem falhas quando se trata das necessidades de nossos clientes.</p>
+                    <p className='text-white  sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Na hora de consertar a porta surgem inúmeras dúvidas, entre em contato com a nossa central e esclareça todas elas, agende uma visita e receba um orçamento sem compromisso.</p>
+                    <p className='text-white  sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Mas para começar a entender melhor a vida útil de sua porta de aço e os problemas, conheça a baixo alguns casos comuns e perguntas frequentes.</p>
                 <div className='hidden md:flex pr-4 pt-8'>
                     <button className='px-8 py-3 ' onClick={handleClick}>Faça um orçamento</button>
                 </div>

@@ -23,7 +23,7 @@ const AcManualLista = () => {
                 </div>
 
                 <div className='p-10'>
-                <p className='text-white font-thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                <p className='text-white font-thin'>Já que segurança nunca é demais, a Verona oferece os melhores cadeados do mercado.</p>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@ const AcManualLista = () => {
                 </div>
 
                 <div className='p-10'>
-                <p className='text-white font-thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                <p className='text-white font-thin'>Ideal para comércios, possibilita a entrada e saída de pessoas enquanto a porta estiver fechada. Sabendo do risco de se ter uma abertura adicional, a Verona realiza a fabricação das portinholas com estruturas reforçadas e perfeitamente encaixadas às lâminas da porta de aço.</p>
                 </div>
             </div>
 
@@ -53,7 +53,7 @@ const AcManualLista = () => {
                 </div>
 
                 <div className='p-10'>
-                <p className='text-white font-thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                <p className='text-white font-thin'>Todas as lâminas, soleira e guias laterais são revestidas por uma película de polímero termo-endurecível colorido (pó de poliéster), oferecendo maior durabilidade na pintura e permitindo diferentes possibilidades de personalização.</p>
                 </div>
             </div>
 

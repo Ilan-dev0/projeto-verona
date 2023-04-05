@@ -25,8 +25,8 @@ const Bottom = () => {
         <img className='w-[250px] h-[100px]' src={authfit} />
       </div>
           
-          <div className='md:px-12 md:ml-64 md:mb-20 mb-20   px-14 justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' sm:ml-60 rounded-none px-16 py-4 mt-8 text-red-900 bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-red-99'>QUERO COMEÇAR MEU PROJETO AGORA</button>
+          <div className='md:px-12  md:mb-20 mb-20 justify-center  px-14 sm:flex sm:justify-items-start'>
+            <button onClick={handleClick} className='  rounded-none px-16 py-4 mt-8 text-red-900 bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-red-99'>QUERO COMEÇAR MEU PROJETO AGORA</button>
           </div>
 
     </div>

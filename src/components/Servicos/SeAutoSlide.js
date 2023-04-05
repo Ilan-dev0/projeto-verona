@@ -41,9 +41,9 @@ const SeAutoSlide = () => {
                 </motion.div>
             </motion.div>
         </div>
-            <div className='p-10 sm:pl-40 sm:pr-40 pb-20 w-full justify-center align-center m-0-auto text-center'>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>A aplicação das portas de aço automáticas de enrolar está voltada para as Indústrias, Comércios, Centros Logísticos, Hangares, Shoppings Center, e agora também para Residências, em novos projetos que a utilizam inclusive em ambientes internos, suprindo todo o segmento com uma solução simples e eficaz nos quesitos espaço, ergonomia e, principalmente, manutenção.</p>
-            <p className='text-white text-justify sm:text-start font-light text-lg tracking-wider'>Grandes clientes fazem parte de nossa história, atestando a qualidade que a nossa empresa oferece ao mercado nacional quando o assunto é a instalação de portas de aço automáticas.s</p>
+            <div className='p-10 sm:pl-40 sm:pr-40 pb-10 w-full justify-center align-center m-0-auto text-center'>
+            <p className='text-white sm:text-start font-light text-lg tracking-wider'>A aplicação das portas de aço automáticas de enrolar está voltada para as Indústrias, Comércios, Centros Logísticos, Hangares, Shoppings Center, e agora também para Residências, em novos projetos que a utilizam inclusive em ambientes internos, suprindo todo o segmento com uma solução simples e eficaz nos quesitos espaço, ergonomia e, principalmente, manutenção.</p>
+            <p className='text-white sm:text-start font-light text-lg tracking-wider'>Grandes clientes fazem parte de nossa história, atestando a qualidade que a nossa empresa oferece ao mercado nacional quando o assunto é a instalação de portas de aço automáticas.s</p>
             </div>
 
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>

@@ -44,10 +44,10 @@ const ManutencaoManualSlide = () => {
             </motion.div>
             </div>
             <div className='p-12 sm:p-20 sm:pl-48 w-full justify-center align-center m-0-auto'>
-                <p className='text-white text-justify sm:text-start font-light sm:text-lg sm:text-2xl'>Não é qualquer negócio que alcança os 30 anos de história sendo referência do segmento em qualidade e segurança.</p>
-                <p className='text-white text-justify sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>
+                <p className='text-white  sm:text-start font-light sm:text-lg sm:text-2xl'>Não é qualquer negócio que alcança os 30 anos de história sendo referência do segmento em qualidade e segurança.</p>
+                <p className='text-white  sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>
 Após anos de pesquisa de mercado, experiências desafiadoras e projetos bem sucedidos, adquirimos um conhecimento detalhado sobre os nossos produtos e todos seus processos de fabricação, permitindo também oferecer os melhores serviços de manutenção.</p>
-                <p className='text-white text-justify sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Se você estiver precisando de qualquer tipo de serviço de manutenção de portas de aço manual, entre em contato com a nossa equipe e faça um orçamento sem compromisso.</p>
+                <p className='text-white  sm:text-start mt-10 font-light sm:text-lg sm:text-2xl'>Se você estiver precisando de qualquer tipo de serviço de manutenção de portas de aço manual, entre em contato com a nossa equipe e faça um orçamento sem compromisso.</p>
             <div className='hidden md:flex pr-4 pt-8'>
                 <button className='px-8 py-3 ' onClick={handleClick}>Faça um orçamento</button>
             </div>

@@ -37,7 +37,7 @@ const SeAutoEstrutura = () => {
 
        <div className='h-[569px] max-w-[380px] w-[300px] md:w-full  flex flex-col   '>
             
-            <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
+            <div className='border-white md:mt-0 mt-12 border-2 rounded-t-xl items-center text-center flex flex-col'>
                 <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
                     <h1 className='text-white text-2xl'>GUIAS</h1>
                 </div>
@@ -50,7 +50,7 @@ const SeAutoEstrutura = () => {
             <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={guia} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[380px] w-[300px] md:w-full  flex flex-col   '>
+       <div className='h-[569px] max-w-[380px] w-[300px] md:w-full  flex flex-col md:mt-0 mt-28  '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
                 <div className='border-b-2 border-white p-2 px-20 md:px-28 max-w-[400px] '>
@@ -65,7 +65,7 @@ const SeAutoEstrutura = () => {
             <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={soleira} alt='Texto alt' />
        </div>
 
-       <div className='h-[569px] max-w-[380px] w-[200px] md:w-full  flex flex-col   '>
+       <div className='h-[569px] max-w-[380px] w-[200px] md:w-full md:mt-0 mt-28  flex flex-col   '>
             
             <div className='border-white  border-2 rounded-t-xl items-center text-center flex flex-col'>
                 <div className='border-b-2 border-white p-2 px-18 md:px-20 max-w-[400px] '>
@@ -84,11 +84,11 @@ const SeAutoEstrutura = () => {
 
       <div className='flex flex-col p-10 items-center'>
 
-      <img className='w-[300px] md:w-[60%] md:h-[60%] h-[300px] rounded-b-xl pointer-events-none justify-center' src={tipos} alt='Texto alt' />
+      <img className='w-[300px] md:w-[60%] md:h-[60%] h-[300px] mt-28 rounded-b-xl pointer-events-none justify-center' src={tipos} alt='Texto alt' />
 
-            <p className='text-white p-20'>Disponibilizamos a opção de chapa inox para todos os perfis de lâminas. <br></br> 
-Atendemos grandes marcas, construtoras,arquitetos e engenheiros para projetos de todos os tipos e tamanhos. <br></br> São 30 anos de história e mais de 200.000 projetos concluídos com sucesso.
-Quer garantir qualidade e segurança no seu projeto? <br></br> Entre em contato com a nossa equipe e faça uma cotação sem compromisso. Será um grande prazer atendê-lo.</p>
+            <p className='text-white text-left sm:text-start font-light  text-1xl md:tracking-wider py-10 md:p-20'>Disponibilizamos a opção de chapa inox para todos os perfis de lâminas. <br></br> 
+Atendemos grandes marcas, construtoras,arquitetos e engenheiros para projetos de todos os tipos e tamanhos. <br></br> São 30 anos de história e mais de 200.000 projetos concluídos com sucesso. <br></br>
+Quer garantir qualidade e segurança no seu projeto? Entre em contato com a nossa equipe e faça uma cotação sem compromisso. Será um grande prazer atendê-lo.</p>
             <div className='flex pr-4 pt-8 justify-center items-center '>
                 <button className='px-8 py-3 ' onClick={handleClick}>ENTRE EM CONTATO AGORA</button>
             </div>
