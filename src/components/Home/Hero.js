@@ -27,21 +27,32 @@ const Hero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  // const prevSlide = () => {
+  //   const isFirstSlide = currentIndex === 0;
+  //   const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1 ;
-    const newIndex = isLastSlide ? 0 :currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  // const nextSlide = () => {
+  //   const isLastSlide = currentIndex === slides.length - 1 ;
+  //   const newIndex = isLastSlide ? 0 :currentIndex + 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
+
+
+  // const autoSlide = () => {
+  //   const currentIndex 
+  // }
+ 
+setInterval(()=> {
+  if(currentIndex === 3){
+  setCurrentIndex(0)
   }
+  else{
+    setCurrentIndex(currentIndex+1)
+  }
+}, 4000)
 
   function handleClick() {
     window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
