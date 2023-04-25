@@ -36,7 +36,7 @@ const ResSlide = () => {
                 trasition={{ duration: 0.8 }}
                 >
                     {images.map(image =>(
-                        <motion.div className='min-h-[200px] min-w-[400px] p-[14px] ' key={image}>
+                        <motion.div className='h-[400px] min-w-[400px] p-[14px] ' key={image}>
                             <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
                         </motion.div>
                     ))}

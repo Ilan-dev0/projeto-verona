@@ -4,8 +4,9 @@ import { motion } from 'framer-motion'
 import image1 from '../../assets/8.png'
 import image2 from '../../assets/110.png'
 import image3 from '../../assets/48.png'
+import image4 from '../../assets/magic.png'
 
-const images = [image1, image2, image3]
+const images = [image1, image2, image3, image4]
 
 const SeAutoSlide = () => {
 
@@ -34,7 +35,7 @@ const SeAutoSlide = () => {
                 trasition={{ duration: 0.8 }}
                 >
                     {images.map(image =>(
-                        <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px]  p-[14px]' key={image}>
+                        <motion.div className='h-[500px] min-w-[340px] sm:min-w-[400px]  p-[14px]' key={image}>
                             <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
                         </motion.div>
                     ))}

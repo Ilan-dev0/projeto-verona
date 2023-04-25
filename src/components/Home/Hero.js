@@ -7,7 +7,7 @@ import imgbg from '../../assets/imgbg.png'
 
 const slides = [
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152225320292472/32.png'
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379188314152/11.png'
   },
   {
     url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152378617905265/7.png'
@@ -60,14 +60,7 @@ const Hero = () => {
           </div>
         </div>
         <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full  bg-center bg-cover duration-500'></div>
-        {/* Seta da esquerda */}
-        <div className='hidden group-hover:block absolute top-[55%] -translate-x-0 translate-y[-50%] left-5 text-2xl rounded-full p-2 bg-black text-white cursor-pointer'>
-          <BsChevronCompactLeft onClick={prevSlide} size={30} />
-        </div>
-        {/* Seta da direita */}
-        <div className='hidden group-hover:block absolute top-[55%] -translate-x-0 translate-y[-50%] right-5 text-2xl rounded-full p-2 bg-black text-white cursor-pointer'>
-          <BsChevronCompactRight onClick={nextSlide} size={30} />
-        </div>
+
 
       </div>
         
