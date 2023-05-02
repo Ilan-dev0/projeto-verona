@@ -52,7 +52,7 @@ setInterval(()=> {
   else{
     setCurrentIndex(currentIndex+1)
   }
-}, 4000)
+},6000)
 
   function handleClick() {
     window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'

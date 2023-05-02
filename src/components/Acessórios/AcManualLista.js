@@ -1,7 +1,7 @@
 import React from 'react'
 import cadeado from '../../assets/cadeado.png'
 import portinhola from '../../assets/portinhola.png'
-import pintura from '../../assets/pintura.png'
+import pintura from '../../assets/pintura.jpg'
 
 
 const AcManualLista = () => {
@@ -57,7 +57,7 @@ const AcManualLista = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={pintura} alt='Texto alt' />
+            <img className='w-full h-[300px] rounded-b-xl pointer-events-none object-cover' src={pintura} alt='Texto alt' />
         </div>
         
 

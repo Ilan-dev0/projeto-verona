@@ -5,7 +5,7 @@ import caixa from '../../assets/caixa.png'
 import emergencia from '../../assets/emergencia.png'
 import sae from '../../assets/sae2.png'
 import portinhola from '../../assets/portinhola.png'
-import pintura from '../../assets/pintura.png'
+import pintura from '../../assets/pintura.jpg'
 
 
 const AcAutoLista = () => {
@@ -105,7 +105,7 @@ const AcAutoLista = () => {
                 </div>
             </div>
 
-            <img className='w-full h-[300px] rounded-b-xl pointer-events-none' src={pintura} alt='Texto alt' />
+            <img className='w-full h-[300px] rounded-b-xl pointer-events-none object-cover' src={pintura} alt='Texto alt' />
         </div>
 
         <div className='h-[569px] max-w-[427px] w-full   flex flex-col  mt-10 '>

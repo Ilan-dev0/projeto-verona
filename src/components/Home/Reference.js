@@ -93,8 +93,8 @@ const Reference = () => {
             </div>
             
           </div>
-            <div className='md:px-24 md:ml-64 md:mb-20 mb-20 px-14 justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' sm:ml-60 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-zinc-900 hover:border-red-800 hover:text-white border-white'>SOLICITAR ORÇAMENTO</button>
+            <div className='md:px-12  md:mb-20 mb-20 justify-center  px-14 sm:flex sm:justify-items-start'>
+            <button onClick={handleClick} className=' rounded-none px-16 py-4 mt-8  text-white bg-transparent hover:bg-zinc-900 hover:border-red-800 hover:text-white border-white'>SOLICITAR ORÇAMENTO</button>
             </div>
       </div>
     </div>
