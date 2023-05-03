@@ -12,26 +12,33 @@ import Residencial from './pages/Residencial';
 import Comercial from './pages/Comercial';
 import Industrial from './pages/Industrial';
 import ManutencaoManual from './pages/ManutencaoManual'
-import {Routes, Route} from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 
 function App() {
   return (
     <>
       <Navbar />
       <FixedWpp />
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/empresa' element={<Empresa/>} />
-        <Route path='/SeAuto' element={<SeAuto/>} />
-        <Route path='/SeManual' element={<SeManual/>} />
-        <Route path='/AcAuto' element={<AcAuto/>} />
-        <Route path='/AcManual' element={<AcManual/>} />
-        <Route path='/manutencao' element={<Manutencao/>} />
-        <Route path='/ManutencaoManual' element={<ManutencaoManual/>} />
-        <Route path='/residencial' element={<Residencial/>} />
-        <Route path='/comercial' element={<Comercial/>} />
-        <Route path='/industrial' element={<Industrial/>} />
-      </Routes>
+
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/empresa' element={<Empresa />} />
+          <Route exact path='/SeAuto' element={<SeAuto />} />
+          <Route exact path='/SeManual' element={<SeManual />} />
+          <Route exact path='/AcAuto' element={<AcAuto />} />
+          <Route exact path='/AcManual' element={<AcManual />} />
+          <Route exact path='/manutencao' element={<Manutencao />} />
+          <Route exact path='/ManutencaoManual' element={<ManutencaoManual />} />
+          <Route exact path='/residencial' element={<Residencial />} />
+          <Route exact path='/comercial' element={<Comercial />} />
+          <Route exact path='/industrial' element={<Industrial />} />
+        </Routes>
+
     </>
   );
 }
