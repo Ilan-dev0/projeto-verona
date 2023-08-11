@@ -1,38 +1,49 @@
-import React from 'react'
-import client1 from '../../assets/jailton.png'
-import client2 from '../../assets/leila.png'
-import client3 from '../../assets/cris.png'
+import { useEffect, useRef, useState, React } from 'react' 
+import { motion } from 'framer-motion'
+import client1 from '../../assets/PROVA SOCIAL/JUNHO-23/10.jpg'
+import client2 from '../../assets/PROVA SOCIAL/JUNHO-23/11.jpg'
+import client3 from '../../assets/PROVA SOCIAL/JUNHO-23/9.jpg'
 import bagulho from '../../assets/bagulho.png'
+import client4 from '../../assets/PROVA SOCIAL/JUNHO-23/7.jpg'
+import client5 from '../../assets/PROVA SOCIAL/JUNHO-23/5.jpg'
+import client6 from '../../assets/PROVA SOCIAL/JUNHO-23/4.jpg'
+import client7 from '../../assets/PROVA SOCIAL/JUNHO-23/3.jpg'
+import client8 from '../../assets/PROVA SOCIAL/JUNHO-23/2.jpg'
 
 const Clients = () => {
+
+  const images = [client1, client2, client3, client4, client5, client6, client7, client8 ]
+
+  const carousel = useRef();
+    const [width, setWidth] = useState(0)
+
+    useEffect(() =>{
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+
+    }, [])
+
   return (
     <div className='w-screen h-max-[1225px] h-full bg-zinc-900 md:flex flex-col pb-10'>
       <div className='p-10'>
         <h1 className='text-white text-center text-4xl text-bold'>NOSSOS CLIENTES APROVAM</h1>
       </div>
       <div className='md:flex  justify-center'>
-        <div className='max-w-sm  max-h-[500px] h-full bg-white rounded-2xl py-9 m-10 flex-col flex items-center'>
-          <img className='w-[200px] ' src={client1} alt=''/>
-          <h1 className='text-center text-bold text-3xl'>Jailton</h1>
-          <p className='text-center'>Lojas Magic Feet</p>
-          <img className='w-[60px] mt-3' src={bagulho} alt=''/>
-          <p className='text-center md:text-1xl text-1xl m-3  max-w-[3000px]'>Parabéns, realmente foi ótimo o serviço prestado pra gente, resolveu com agilidade e seriedade as nossas lojas</p>
-        </div>
-        <div className='max-w-sm  max-h-[600px] h-full bg-white rounded-2xl py-9 m-10 flex-col flex items-center'>
-          <img className='w-[200px] ' src={client2} alt=''/>
-          <h1 className='text-center text-bold text-3xl'>Leila Nascimento</h1>
-          <p className='text-center'>Lojas Camisaria Colombo</p>
-          <img className='w-[60px] mt-3' src={bagulho} alt=''/>
-          <p className='text-center  md:text-1xl max-w-[400px] text-1xl m-3 '>Nós da Camisaria Colombo agradecemos e parabenizamos os profissionais da empresa Portas Verona pela excelência, dedicação e competência em seu atendimento.</p>
-        </div>
-        
-        <div className='max-w-sm  max-h-[500px] h-full bg-white rounded-2xl py-9 m-10 flex-col flex items-center'>
-        <img className='w-[200px] ' src={client3} alt=''/>
-          <h1 className='text-center text-bold text-3xl'>Cristiane Lucas</h1>
-          <p className='text-center'>Adapt Engenharia</p>
-          <img className='w-[60px] mt-3' src={bagulho} alt=''/>
-          <p className='text-center mdd:text-2xl text-1xl m-3  p-2  max-w-[300px]'>Empresa com pessoas competentes e pontuais.</p>
-        </div>
+      <motion.div ref={carousel} className='min-h-[20rem] width-[33%] overflow-hidden' whileTap={{cursor: "grabbing"}}>
+            <motion.div className='cursor-grab  flex'
+            drag="x"
+            dragConstraints={{ right:0, left: -width}}
+            initial={{ x: 100 }}
+            animate={{ x:0 }}
+            trasition={{ duration: 0.8 }}
+            >
+                {images.map(image =>(
+                    <motion.div className='max-w-sm  max-h-[500px]  bg-red-900 rounded-2xl py-9 m-10 flex-col flex items-center min-h-[15rem] min-w-[30rem]'  key={image}>
+                        <img className='w-full h-[100%] pointer-events-none object-contain' src={image} alt='Texto alt' />
+                    </motion.div>
+                ))}
+            </motion.div>
+        </motion.div>
+      
       </div>
     </div>
   )
