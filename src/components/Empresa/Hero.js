@@ -5,7 +5,7 @@ import {RxDotFilled, RxDot} from 'react-icons/rx';
 
 const slides = [
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176573271773294/315.png'
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176574903357460/305.jpg'
   },
   {
     url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176572453888050/718-B.png'
@@ -14,7 +14,7 @@ const slides = [
     url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176574219694191/313.jpg'
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176574903357460/305.jpg'
+    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176573271773294/315.png'
   },
 ]
 

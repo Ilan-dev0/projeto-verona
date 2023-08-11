@@ -33,9 +33,8 @@ const Projects = () => {
         </p>
         </div>
         <div className='flex align-center justify-center'>
-        <motion.div ref={carousel} className='cursor-grab overflow-hidden max-w-[1200px]' whileTap={{cursor: "grabbing"}}>
-            <motion.div 
-            className='flex'
+        <motion.div ref={carousel} className='min-h-[40rem] width-[33%] overflow-hidden' whileTap={{cursor: "grabbing"}}>
+            <motion.div className='cursor-grab  flex'
             drag="x"
             dragConstraints={{ right:0, left: -width}}
             initial={{ x: 100 }}
@@ -43,8 +42,8 @@ const Projects = () => {
             trasition={{ duration: 0.8 }}
             >
                 {images.map(image =>(
-                    <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px] p-[14px] sm:min-w-[400px] p-[14px]' key={image}>
-                        <img className='w-full h-[90%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                    <motion.div className='min-h-[40rem] min-w-[30rem] p-10'  key={image}>
+                        <img className='w-full h-[100%] rounded-xl pointer-events-none object-cover' src={image} alt='Texto alt' />
                     </motion.div>
                 ))}
             </motion.div>

@@ -52,7 +52,7 @@ setInterval(()=> {
   else{
     setCurrentIndex(currentIndex+1)
   }
-},6000)
+},100000)
 
   function handleClick() {
     window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
@@ -60,14 +60,11 @@ setInterval(()=> {
 
   return (
     <div className=' w-screen  relative group'>
-      <div className=' h-[620px] md:h-[720px] w-full relative group'>
-        <div className="bg-black bg-opacity-80 h-[620px] md:h-[720px] w-full absolute pt-60 p-10 md:pb-0 md:pr-0 md:pl-0">
-          <h1 className='text-white text-2xl sm:text-7xl font-bold  sm:text-start sm:pl-40'>30 ANOS TRANSFORMANDO AÇO EM SEGURANÇA</h1>
-          <p className='text-zinc-300 text-1xl pt-4 sm:text-2xl sm:pl-40  sm:text-start' >FÁBRICA DE PORTAS DE AÇO DE ENROLAR AUTOMÁTICAS</p>
-          <p className='text-zinc-300 text-1xl pt-4 italic sm:pl-40  sm:text-start'> A Verona é referência desde 1993 porque sabe que segurança não é brincadeira. É pré-requisito de fábrica.</p>
-          <p className='text-zinc-300 text-1xl italic sm:pl-40 hidden md:block  sm:text-start'>Matéria-prima mais resistente, maquinário moderno e suporte profissionalizado são alguns dos diferenciais que <br></br> encantam nossos clientes em três décadas de história.</p>
-          <div className='grid justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' sm:ml-40 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>FAÇA SEU ORÇAMENTO</button>
+      <div className=' h-[620px] md:h-[900px] w-full relative group '>
+        <div className="bg-black bg-opacity-80  h-[620px] md:h-[900px] w-full absolute pt-60 p-10 md:pb-0 md:pr-0 md:pl-0">
+          <h1 className='text-white text-2xl sm:text-6xl font-bold  text-center md:mt-32 '>30 ANOS TRANSFORMANDO <br></br>AÇO EM <span className='text-red-700'>SEGURANÇA</span></h1>
+          <div className='md:px-10  md:mb-20 px-14 justify-center sm:flex sm:justify-items-start'>
+            <button onClick={handleClick} className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>FAÇA SEU ORÇAMENTO</button>
           </div>
         </div>
         <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full  bg-center bg-cover duration-500'></div>
