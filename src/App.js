@@ -18,8 +18,24 @@ import {
   Route,
 } from "react-router-dom";
 
+import TagManager from 'react-gtm-module'
+import { useEffect } from 'react';
+
+
+
 
 function App() {
+
+  useEffect(() =>{
+
+    const tagManagerArgs = {
+      gtmid:'GTM-MR9F65R7'
+    }
+    
+    TagManager.initialize(tagManagerArgs)
+
+  },[])
+
   return (
     <>
       <Navbar />
