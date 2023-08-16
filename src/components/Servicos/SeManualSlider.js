@@ -35,7 +35,7 @@ const SeManualSlide = () => {
                 >
                     {images.map(image =>(
                         <motion.div className='min-h-[100px] min-w-[340px] sm:min-w-[400px]   p-[14px] ' key={image}>
-                            <img className='w-full h-[50%] rounded-xl pointer-events-none' src={image} alt='Texto alt' />
+                            <img className='w-full h-[50%] rounded-xl pointer-events-none object-cover' src={image} alt='Texto alt' />
                         </motion.div>
                     ))}
                 </motion.div>
@@ -48,7 +48,7 @@ const SeManualSlide = () => {
             </div>
 
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4  text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
+            <button id='button' onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4  text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
     </div>
   )

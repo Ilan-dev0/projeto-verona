@@ -26,16 +26,7 @@ import { useEffect } from 'react';
 
 function App() {
 
-  useEffect(() =>{
-
-    const tagManagerArgs = {
-      gtmid:'GTM-MR9F65R7'
-    }
-    
-    TagManager.initialize(tagManagerArgs)
-
-  },[])
-
+  
   return (
     <>
       <Navbar />
