@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion'
+import Modal from '../Modal/Modal';
 
 import image1 from '../../assets/8.png'
 import image2 from '../../assets/110.png'
@@ -10,12 +11,14 @@ const images = [image1, image2, image3, image4]
 
 const SeAutoSlide = () => {
 
-    function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
-    }
-
+    
     const carousel = useRef();
     const [width, setWidth] = useState(0)
+    const [showModal, setShowModal] = useState(false)
+    
+    function handleClick() {
+        setShowModal(!showModal)
+    }
 
     useEffect(() =>{
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
@@ -50,6 +53,10 @@ const SeAutoSlide = () => {
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
             <button onClick={handleClick} className=' mb-10 rounded-none px-16 py-4 mt-8 text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
+        <Modal
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
     </div>
   )
 }

@@ -5,12 +5,9 @@ import image1 from '../../assets/18.JPG'
 import image2 from '../../assets/5.png'
 import image3 from '../../assets/67.png'
 import image4 from '../../assets/metal1.jpg'
+import Modal from '../Modal/Modal';
 
 const images = [image1, image2, image3, image4]
-
-function handleClick() {
-    window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
-}
 
 const SeManualSlide = () => {
     const carousel = useRef();
@@ -20,6 +17,12 @@ const SeManualSlide = () => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
 
     }, [])
+
+    const [showModal, setShowModal] = useState(false)
+    
+    function handleClick() {
+        setShowModal(!showModal)
+    }
 
   return (
     <div className='mt-20 w-full m-0-auto   flex-column  align-center justify-center bg-zinc-900'>
@@ -50,6 +53,10 @@ const SeManualSlide = () => {
             <div className='flex justify-center justify-items-center sm:flex sm:justify-items-start'>
             <button id='button' onClick={handleClick} className=' mb-10 rounded-none px-2 md:px-16 py-4  text-white bg-transparent hover:bg-red-800 hover:border-red-800 hover:text-white border-white'>QUERO FAZER UM ORÇAMENTO</button>
             </div>
+        <Modal
+            showModal={showModal}
+            setShowModal={setShowModal}
+        />
     </div>
   )
 }

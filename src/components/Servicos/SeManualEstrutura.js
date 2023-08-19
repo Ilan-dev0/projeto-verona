@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react';
 import eixo from '../../assets/eixo2.png'
 import guia from '../../assets/guia2.png'
 import soleira from '../../assets/soleira2.png'
@@ -8,11 +8,14 @@ import fechadura from '../../assets/fechadura2.png'
 import fita from '../../assets/fita2.png'
 import mola from '../../assets/mola2.png'
 import tipos from '../../assets/image 41.png'
+import Modal from '../Modal/Modal';
 
 const SeManualEstrutura = () => {
 
+    const [showModal, setShowModal] = useState(false)
+    
     function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de retirar uma dúvida'
+        setShowModal(!showModal)
     }
 
 
@@ -160,7 +163,10 @@ s</p>
                 <button className='px-8 py-3 ' onClick={handleClick}>ENTRE EM CONTATO AGORA</button>
             </div>
       </div>
-
+    <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+    />
     </div>
   )
 }

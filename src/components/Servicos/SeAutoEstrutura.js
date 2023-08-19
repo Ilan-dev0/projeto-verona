@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react';
 import eixo from '../../assets/6.png'
 import guia from '../../assets/guia2.png'
 import soleira from '../../assets/soleira2.png'
 import kit from '../../assets/kit.png'
 import tipos from '../../assets/image 38.png'
+import Modal from '../Modal/Modal';
 
 const SeAutoEstrutura = () => {
-
-  function handleClick() {
-    window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
-}
+  const [showModal, setShowModal] = useState(false)
+    
+    function handleClick() {
+        setShowModal(!showModal)
+    }
 
   return (
     <div className='w-full h-full bg-zinc-900'>
@@ -93,7 +95,10 @@ Quer garantir qualidade e segurança no seu projeto? Entre em contato com a noss
                 <button className='px-8 py-3 ' onClick={handleClick}>ENTRE EM CONTATO AGORA</button>
             </div>
       </div>
-
+      <Modal
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
     </div>
   )
 }

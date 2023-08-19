@@ -1,0 +1,13 @@
+.inp {
+    width: 100%; /* Ocupa 100% da largura da div */
+    border: 1px solid gray; /* Borda de 1px com cor cinza */
+    padding: 8px; /* Espaçamento interno para melhor visualização */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+    border-radius: 4px; /* Borda arredondada */
+}
+  
+/* Estilização quando o input está focado */
+inp:focus {
+    outline: none; /* Remove o contorno padrão ao ganhar foco */
+    border-color: blue; /* Altera a cor da borda quando em foco */
+}

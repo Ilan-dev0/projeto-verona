@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react';
+import Modal from '../Modal/Modal';
 
 const Parallax = () => {
 
-    function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
-    }
+  const [showModal, setShowModal] = useState(false);
+
+  function handleClick() {
+    setShowModal(!showModal)
+  }
 
   return (
     <div className='w-screen h-max-[610px] h-full bg-white'>
@@ -16,6 +19,10 @@ const Parallax = () => {
             <button onClick={handleClick} className='rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-black border-green-400'>QUERO FALAR COM A VERONA!</button>
           </div>
       </div>
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </div>
   )
 }

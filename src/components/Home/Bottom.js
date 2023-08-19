@@ -14,6 +14,7 @@ import clients9 from '../../assets/LOGO CLIENTES/AYRA.png'
 import clients10 from '../../assets/LOGO CLIENTES/JOHNS.jpeg'
 import clients11 from '../../assets/LOGO CLIENTES/PANDORA.png'
 import clients12 from '../../assets/LOGO CLIENTES/OBOTICARIO.png'
+import Modal from '../Modal/Modal';
 
 
 
@@ -38,7 +39,8 @@ const Bottom = () => {
 
   const carousel = useRef();
   const [index, setIndex] = useState(0)
-    const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(0)
+  const [showModal, setShowModal] = useState(false);
 
     useEffect(() =>{
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
@@ -52,11 +54,15 @@ const Bottom = () => {
       }
 
   function handleClick() {
-    window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
+    setShowModal(!showModal)
 }
 
   return (
     <div className='w-screen h-max-[610px] h-full bg-white'>
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
       <div className='p-10'>
         <h1 className='text-zinc-900 text-center text-4xl text-bold '>QUEM SÃO ELES</h1>
       </div>

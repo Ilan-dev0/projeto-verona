@@ -1,19 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react';
 import project1 from '../../assets/vm4.png'
 import project2 from '../../assets/vm5.png'
 import project3 from '../../assets/vm3.png'
 import project4 from '../../assets/vm1.png'
 import project5 from '../../assets/vm2.png'
 import project6 from '../../assets/vm6.png'
+import Modal from '../Modal/Modal';
 
 const Reference = () => {
 
-    function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de fazer um orçamento.'
-    }
+  const [showModal, setShowModal] = useState(false);
+
+  function handleClick() {
+    setShowModal(!showModal)
+  }
 
   return (
     <div className='w-screen h-max-[940px] h-full bg-[#690005]'>
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
       <div className='flex flex-col justify-center m-auto '>
         <div className=' text-center items-center justify-center p-5 mt-10'>
             <h1 className='py-4 px-2 text-white text-bold md:text-3xl text-2xl'>POR QUE A VERONA É REFERÊNCIA EM SEGURANÇA?</h1>
