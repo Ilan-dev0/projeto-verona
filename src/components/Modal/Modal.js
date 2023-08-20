@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './Modal.css';
+import PostClients from '../../hooks/PostClient';
+import axios from 'axios';
 
 export default function Modal(props) {
 
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
     const [email, setEmail] = useState('')
+    const [loading, setLoading] = useState(false)
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        //console.log('Nome:', name);
-        //console.log('Telefone:', tel);
-        //console.log('Email:', email);
+        if(name != '' && tel != '' && email != ''){
+            setLoading(true)
+            await PostClients({
+                name: name,
+                phone_number: tel,
+                email_adress: email
+            })
+            setLoading(false)
+            setName('')
+            setTel('')
+            setEmail('')
+            props.setShowModal(false)
+        }
         
     };
 
@@ -91,9 +104,10 @@ export default function Modal(props) {
                     <button
                         className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm sm:text-base md:text-lg px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
+                        disabled = {loading ? true : false}
                         onClick={(e) => handleSubmit(e)}
                     >
-                        Enviar
+                        {loading ? "Enviando..." : "Enviar"}
                     </button>
                     </div>
                 </div>
