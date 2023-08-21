@@ -8,12 +8,14 @@ export default function Modal(props) {
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
     const [email, setEmail] = useState('')
+    const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if(name != '' && tel != '' && email != ''){
+            setError('')
             setLoading(true)
             await PostClients({
                 name: name,
@@ -25,9 +27,29 @@ export default function Modal(props) {
             setTel('')
             setEmail('')
             props.setShowModal(false)
+            window.location.href = 'https://api.whatsapp.com/send?phone=05511982096911&text=Olá! Gostaria de fazer um orçamento.'
+        }else{
+            setError('Complete todos os campos.')
         }
-        
     };
+
+    const phoneMask = (value) => {
+        if (!value) return '';
+        value = value.replace(/\D/g, '');
+        value = value.replace(/(\d{2})(\d)/, '($1) $2');
+        value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+        return value;
+      };
+    
+      function handleTelChange(e) {
+        const inputValue = e.target.value;
+        if (inputValue.length <= tel.length) {
+          setTel(inputValue);
+        } else {
+          const formattedValue = phoneMask(inputValue);
+          setTel(formattedValue);
+        }
+      }
 
     return (
         <>
@@ -60,6 +82,7 @@ export default function Modal(props) {
                         </p>
                         <input
                         type='text'
+                        maxLength="55"
                         placeholder='Insira seu nome'
                         className='inp'
                         value={name}
@@ -71,11 +94,12 @@ export default function Modal(props) {
                         Telefone
                         </p>
                         <input
-                        type='tel'
-                        placeholder='Insira seu telefone'
-                        className='inp'
-                        value={tel}
-                        onChange={(e) => setTel(e.target.value)}
+                            type='tel'
+                            placeholder='ex. (11)99999-9999'
+                            className='inp'
+                            maxLength="15"
+                            value={tel}
+                            onChange={(e) => handleTelChange(e)}
                         />
                     </div>
                     <div className='relative'>
@@ -84,12 +108,22 @@ export default function Modal(props) {
                         </p>
                         <input
                         type='email'
+                        maxLength="55"
                         placeholder='Insira seu e-mail'
                         className='inp'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
+                    {
+                        error != '' ? (
+                            <div className='mt-4'>
+                                <p className='text-red-600'>
+                                    {error}
+                                </p>
+                            </div>
+                        ):null
+                    }
                     </div>
 
                     {/*footer*/}
