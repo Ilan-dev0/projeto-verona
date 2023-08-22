@@ -27,7 +27,7 @@ export default function Modal(props) {
             setTel('')
             setEmail('')
             props.setShowModal(false)
-            window.location.href = 'https://api.whatsapp.com/send?phone=05511982096911&text=Olá! Gostaria de fazer um orçamento.'
+            window.location.href = 'https://api.whatsapp.com/send?phone=05511947090583&text=Olá! Gostaria de fazer um orçamento.'
         }else{
             setError('Complete todos os campos.')
         }
