@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion'
-
+import Modal from '../Modal/Modal';
 import image1 from '../../assets/25.png'
 import image2 from '../../assets/24.png'
 import image3 from '../../assets/man1.png'
@@ -10,9 +10,12 @@ const images = [image1, image2, image3]
 const ManutencaoSlide = () => {
 
 
+    const [showModal, setShowModal] = useState(false);
+
     function handleClick() {
-        window.location.href = 'https://api.whatsapp.com/send?phone=11982096911&text=Olá! Gostaria de retirar uma dúvida'
+        setShowModal(!showModal)
     }
+
 
     const carousel = useRef();
     const [width, setWidth] = useState(0)
@@ -22,7 +25,17 @@ const ManutencaoSlide = () => {
 
     }, [])
 
-  return (
+    return(
+        <>   
+        <Modal
+            showModal={showModal}
+            setShowModal={setShowModal}
+        />     
+        <div className='m-0-auto w-full flex-column align-center justify-center bg-[#690005]'>
+            
+            
+    </div>
+
     <div className='mt-44 w-full w-full flex align-center justify-center bg-zinc-900'>
         <div className='w-full w-full bg-zinc-900 pt-10 sm:pr-8'>
             <div className='flex align-center justify-center'>
@@ -56,6 +69,7 @@ const ManutencaoSlide = () => {
         </div>
             
     </div>
+    </>
   )
 }
 

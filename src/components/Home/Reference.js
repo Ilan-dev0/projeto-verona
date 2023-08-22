@@ -6,6 +6,7 @@ import project4 from '../../assets/vm1.png'
 import project5 from '../../assets/vm2.png'
 import project6 from '../../assets/vm6.png'
 import Modal from '../Modal/Modal';
+import { motion } from 'framer-motion';
 
 const Reference = () => {
 
@@ -101,7 +102,12 @@ const Reference = () => {
             
           </div>
             <div className='md:px-12  md:mb-20 mb-20 justify-center  px-14 sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className='  rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>SOLICITAR ORÇAMENTO</button>
+            <motion.button 
+            initial={{ scale: 1.0 }}
+            animate={{ scale: [1.0, 1.2, 1.0]  }}
+            transition={{ duration: 2, repeat: Infinity }}
+            whileTap={{ scale: 0.9 }}
+            onClick={handleClick} className='  rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>SOLICITAR ORÇAMENTO</motion.button>
             </div>
       </div>
     </div>

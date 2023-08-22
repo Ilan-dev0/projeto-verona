@@ -5,6 +5,8 @@ import {FaStore, FaIndustry} from 'react-icons/fa'
 import {GiHouse} from 'react-icons/gi'
 import imgbg from '../../assets/imgbg.png'
 import Modal from '../Modal/Modal';
+import { motion } from 'framer-motion';
+
 
 const slides = [
   {
@@ -67,7 +69,15 @@ setInterval(()=> {
           <div className="bg-black bg-opacity-80  h-[620px] md:h-[900px] w-full absolute pt-60 p-10 md:pb-0 md:pr-0 md:pl-0">
             <h1 className='text-white text-2xl sm:text-6xl font-bold  text-center md:mt-32 '>30 ANOS TRANSFORMANDO <br></br>AÇO EM <span className='text-red-700'>SEGURANÇA</span></h1>
             <div className='md:px-10  md:mb-20 px-14 justify-center sm:flex sm:justify-items-start'>
-              <button onClick={handleClick} className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>FAÇA SEU ORÇAMENTO</button>
+              <motion.button 
+              initial={{ scale: 1.0 }}
+              animate={{ scale: [1.0, 1.2, 1.0]  }}
+              transition={{ duration: 2, repeat: Infinity }}
+              whileTap={{ scale: 0.9 }}
+              onClick={handleClick} 
+              className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>
+              FAÇA SEU ORÇAMENTO
+              </motion.button>
             </div>
           </div>
           <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full  bg-center bg-cover duration-500'></div>

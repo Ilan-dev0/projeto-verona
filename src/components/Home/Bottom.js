@@ -92,7 +92,15 @@ const Bottom = () => {
         </div>
           
           <div className='md:px-12  md:mb-20 mb-20 justify-center  px-14 sm:flex sm:justify-items-start'>
-            <button onClick={handleClick} className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>QUERO COMEÇAR MEU PROJETO AGORA</button>
+            <motion.button 
+            initial={{ scale: 1.0 }}
+            animate={{ scale: [1.0, 1.2, 1.0]  }}
+            transition={{ duration: 2, repeat: Infinity }}
+            whileTap={{ scale: 0.9 }}
+            onClick={handleClick} 
+            className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>
+              QUERO COMEÇAR MEU PROJETO AGORA
+            </motion.button>
           </div>
 
     </div>

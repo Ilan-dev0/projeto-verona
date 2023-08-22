@@ -2,8 +2,56 @@ import React, { useState, useEffect } from 'react';
 import './Modal.css';
 import PostClients from '../../hooks/PostClient';
 import axios from 'axios';
+import { motion } from 'framer-motion';
+
+const dropIn = {
+    hidden: {
+      y: "-100vh",
+      opacity: 0,
+    },
+    visible: {
+      y: "0",
+      opacity: 1,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+    exit: {
+      y: "100vh",
+      opacity: 0,
+    },
+  };
+
+  const newspaper = {
+  hidden: {
+    transform: "scale(0) rotate(720deg)",
+    opacity: 0,
+    transition: {
+      delay: 0.3,
+    },
+  },
+  visible: {
+    transform: " scale(1) rotate(0deg)",
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  exit: {
+    transform: "scale(0) rotate(-720deg)",
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 
 export default function Modal(props) {
+
+    
 
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
@@ -56,7 +104,13 @@ export default function Modal(props) {
         {props.showModal ? (
             <>
             <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                <div className="relative w-full max-w-md m-auto">
+                <motion.div
+                onClick={(e) => e.stopPropagation()}  
+                variants={dropIn}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="relative w-full md:max-w-[60%] max-w-md m-auto modal orange-gradient">
                 {/*content*/}
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
                     {/*header*/}
@@ -145,7 +199,7 @@ export default function Modal(props) {
                     </button>
                     </div>
                 </div>
-                </div>
+                </motion.div>
             </div>
             <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
             </>
