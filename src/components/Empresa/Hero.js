@@ -1,20 +1,23 @@
 import React, {useState} from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight,  } from 'react-icons/bs';
 import {RxDotFilled, RxDot} from 'react-icons/rx';
-
+import slide1 from  '../../assets/305.jpg'
+import slide2 from  '../../assets/718-B.png'
+import slide3 from  '../../assets/313.jpg'
+import slide4 from  '../../assets/315.png'
 
 const slides = [
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176574903357460/305.jpg'
+    url: slide1
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176572453888050/718-B.png'
+    url: slide2
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176574219694191/313.jpg'
+    url: slide3
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088176573271773294/315.png'
+    url: slide4
   },
 ]
 

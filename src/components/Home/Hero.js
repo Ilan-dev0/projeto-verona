@@ -6,20 +6,23 @@ import {GiHouse} from 'react-icons/gi'
 import imgbg from '../../assets/imgbg.png'
 import Modal from '../Modal/Modal';
 import { motion } from 'framer-motion';
-
+import slide1 from '../../assets/11.png'
+import slide2 from '../../assets/7.png'
+import slide3 from '../../assets/11.png'
+import slide4 from '../../assets/13.png'
 
 const slides = [
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379188314152/11.png'
+    url: slide1
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152378617905265/7.png'
+    url: slide2
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379188314152/11.png'
+    url: slide3
   },
   {
-    url: 'https://cdn.discordapp.com/attachments/884191786074009640/1088152379830063174/13.png'
+    url: slide4
   },
 ]
 
@@ -75,6 +78,7 @@ setInterval(()=> {
               transition={{ duration: 2, repeat: Infinity }}
               whileTap={{ scale: 0.9 }}
               onClick={handleClick} 
+              id="button"
               className=' rounded-none px-16 py-4 mt-8 text-white bg-green-500 hover:border-green-800 hover:text-white border-green-400'>
               FAÇA SEU ORÇAMENTO
               </motion.button>

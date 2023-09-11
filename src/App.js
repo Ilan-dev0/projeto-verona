@@ -2,7 +2,6 @@ import Navbar from './components/Navbar'
 import './App.css';
 import Home from './pages/Home';
 import Empresa from './pages/Empresa';
-import FixedWpp from './components/Whatsapp/FixedWpp';
 import SeAuto from './pages/SeAuto';
 import SeManual from './pages/SeManual';
 import AcAuto from './pages/AcAuto';
@@ -30,7 +29,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <FixedWpp />
 
         <Routes>
           <Route exact path='/' element={<Home/>} />
