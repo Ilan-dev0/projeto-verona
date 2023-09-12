@@ -62,7 +62,7 @@ setInterval(()=> {
 },100000)
 
   function handleClick() {
-    setShowModal(!showModal)
+    window.location.href = 'https://wa.me//5511947090583?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!'
 }
 
   return (
