@@ -54,7 +54,7 @@ const Bottom = () => {
       }
 
   function handleClick() {
-    setShowModal(!showModal)
+    window.location.href = 'https://api.whatsapp.com/send?phone=5511982096911&text=Olá! Vim pelo Site e gostaria de fazer um orçamento!'
 }
 
   return (

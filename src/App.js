@@ -11,6 +11,7 @@ import Residencial from './pages/Residencial';
 import Comercial from './pages/Comercial';
 import Industrial from './pages/Industrial';
 import ManutencaoManual from './pages/ManutencaoManual'
+import FixedWpp from './components/Whatsapp/FixedWpp';
 import {
   BrowserRouter as Router,
   Routes,
@@ -43,7 +44,7 @@ function App() {
           <Route exact path='/comercial' element={<Comercial />} />
           <Route exact path='/industrial' element={<Industrial />} />
         </Routes>
-
+      <FixedWpp />
     </>
   );
 }

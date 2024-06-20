@@ -13,7 +13,7 @@ const Reference = () => {
   const [showModal, setShowModal] = useState(false);
 
   function handleClick() {
-    window.location.href = 'https://wa.me//5511947090583?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!'
+    window.location.href = 'https://api.whatsapp.com/send?phone=5511982096911&text=Olá! Vim pelo Site e gostaria de fazer um orçamento!'
   }
 
   return (
